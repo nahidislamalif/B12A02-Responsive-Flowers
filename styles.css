@@ -224,7 +224,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/deal-zabo.png");
+  background-image: url("./assets/deal-zabo.png");
   border-radius: 14px;
   color: white;
 }
