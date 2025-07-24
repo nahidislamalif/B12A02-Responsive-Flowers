@@ -15,6 +15,9 @@ body {
   color: rgb(233, 90, 8);
 }
 
+button:hover {
+  background-color: burlywood;
+}
 /* footer color */
 .text-color {
   color: rgb(107, 114, 128);
@@ -141,6 +144,8 @@ p {
 }
 
 /* badge */
+
+
 .badge img {
   width: 286px;
   height: 286px;
@@ -325,14 +330,12 @@ p {
 
   /* plant section */
   .plant-grid {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 30px 16px;
-    column-gap: 20px;
-    row-gap: 20px;
-    align-items: center;
-    margin-bottom: 30px;
-    width: 100%;
-  }
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 16px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+ 
   .plant p {
     font-size: 14px;
     font-weight: 400;
@@ -403,13 +406,19 @@ p {
     width: 218px;
   }
   .join-section button {
-
     padding: 26px 50px;
   }
-  .footer{
+  .footer {
     flex-direction: column;
     margin-left: 16px;
     margin-bottom: 30px;
     gap: 0;
+  }
+  .plant-lover-section-badge{
+    width: 100%;
+
+  }
+  .plant {
+    width: 100%;
   }
 }
