@@ -287,4 +287,44 @@ p {
   .desktop-br {
     display: none;
   }
+
+  /* latest-deals */
+  .latest-deals h2{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .latest-deals p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+/* box design */
+.three-box-grid {
+  display: flex;
+  flex-direction: column;     
+  gap: 20px;                  
+  margin-bottom: 100px;
+  padding: 0 16px;            
+  box-sizing: border-box;   
+}
+
+.box1 {
+  width: 100%;
+  background-size: cover;
+
+}
+
+.box2 {
+  width: 100%;
+  background-size: cover;
+  margin: 0;                 
+}
+.box3 {
+  width: 100%;              
+  height: 220px;
+  background-size: cover;
+  display: flex;            
+  align-items: center;
+  margin: 0;
+}
+
 }
