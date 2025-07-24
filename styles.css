@@ -46,6 +46,7 @@ body {
   margin-top: 56px;
   margin-bottom: 20px;
 }
+
 .banner p {
   font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
@@ -74,13 +75,13 @@ body {
   text-align: center;
   margin-bottom: 30px;
 }
-.plant-item img {
-  margin-top: 30px;
+.plant-item h3,
+p {
+  margin-bottom: 20px;
 }
-.plant-item img,
-h3,
-h4 {
+.plant-item img {
   margin-bottom: 30px;
+  height: 320px;
 }
 .plant-grid {
   display: grid;
@@ -96,22 +97,20 @@ h4 {
 .plant-item button {
   width: 100%;
   background-color: rgb(233, 90, 8);
-  padding: 26px 50px;
+  padding: 20px 50px;
   color: white;
   border: none;
-  margin-bottom: 30px;
   font-weight: 600;
 }
 
 /* plant-lover-section */
 
 .plant-lover-section {
-  
   display: flex;
   gap: 60px;
-  margin-top: 120px;
+  /* margin-top: 120px; */
   max-width: 1140px;
-  
+
   z-index: 1;
   margin: 0 auto;
   margin-top: 210px;
@@ -122,11 +121,14 @@ h4 {
   font-weight: 700;
   margin: 40px 0;
 }
-.plant-lover-section li {
+.plant-lover-text li {
   font-size: 22px;
   font-weight: 400;
   line-height: 27px;
   margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 16px;
+  margin-top: 18px;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -137,21 +139,96 @@ h4 {
   max-width: 1140px;
   margin: 0 auto;
   margin-bottom: 0;
-  left:600px ;
+  left: 600px;
   z-index: 2;
 }
-.plant-lover-section-badge{
-    position: relative;
-    display: inline-block
+.plant-lover-section-badge {
+  position: relative;
+  display: inline-block;
 }
 
 .badge {
   position: absolute;
-  top: -120px;     
-  left: 350px;    
+  top: -120px;
+  left: 350px;
   /* width: 80px; */
   z-index: 2;
 }
+/* latest-deals */
+.latest-deals h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.latest-deals p {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+.latest-deals {
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+/* box design */
+
+.three-box-grid {
+  display: grid;
+
+  grid-template-columns: 25% 75%;
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1140px;
+  column-gap: 28px;
+  row-gap: 25px;
+}
+.box1 {
+  width: 367px;
+  height: 201px;
+  margin-right: 20px;
+  background-image: url("./assets/deal-bloom.png");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  color: white;
+}
+.box2 {
+  width: 367px;
+  height: 201px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/deal-ana.png");
+  border-radius: 14px;
+  color: white;
+}
+
+/* Make right-side box span two rows */
+.box3 {
+  margin-left: 80px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 753px;
+  height: fill;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/deal-zabo.png");
+  border-radius: 14px;
+  color: white;
+}
+
+.box a {
+  color: white;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Media query for small device */
 
 @media screen and (max-width: 576px) {
@@ -186,34 +263,28 @@ h4 {
   .plant-grid {
     grid-template-columns: repeat(2, 1fr);
     margin: 30px 16px;
-    column-gap: 50px;
+    column-gap: 20px;
     row-gap: 20px;
     align-items: center;
+    margin-bottom: 30px;
   }
   .plant p {
     font-size: 14px;
     font-weight: 400;
   }
-  .plant-item {
-    width: 171px;
-    text-align: center;
-    gap: 20px;
-  }
-  .plant-item btn {
-    width: 100%;
-    font-weight: 500;
-    font-size: 16px;
-  }
 
   /* plant-lover-section */
-  .plant-lover-section{
+  .plant-lover-section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 40 16px;
+    margin: 40px 16px;
     width: 100%;
   }
   .badge {
+    display: none;
+  }
+  .desktop-br {
     display: none;
   }
 }
